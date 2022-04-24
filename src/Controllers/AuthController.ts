@@ -12,7 +12,7 @@ const transporter = createTransport(
   sendgridTransport({
     auth: {
       api_key:
-        "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",
+        process.env.MONGO_URL || process.env.mongoUri,
     },
   })
 );
